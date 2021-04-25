@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Start learning vue",
+      "details": "Lorem ipsum",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "title": "Start learning Typescript",
+      "details": "Lorem ipsum",
+      "complete": false
+    }
+  ]
+}
