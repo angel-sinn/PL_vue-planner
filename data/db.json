@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "title": "Start learning vue",
+      "title": "Start learning Vue",
       "details": "Lorem ipsum",
       "complete": true
     },
