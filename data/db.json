@@ -1,16 +1,22 @@
 {
   "projects": [
     {
-      "id": 1,
       "title": "Start learning Vue",
       "details": "Lorem ipsum",
-      "complete": true
+      "complete": true,
+      "id": 1
     },
     {
-      "id": 2,
       "title": "Start learning Typescript",
       "details": "Lorem ipsum",
-      "complete": false
+      "complete": false,
+      "id": 2
+    },
+    {
+      "title": "Start learning C++",
+      "details": "Lorem ipsum",
+      "complete": false,
+      "id": 3
     }
   ]
 }
