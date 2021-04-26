@@ -3,7 +3,7 @@
     {
       "title": "Vue",
       "details": "On Udemy",
-      "complete": true,
+      "complete": false,
       "id": 1
     },
     {
@@ -13,9 +13,9 @@
       "id": 2
     },
     {
-      "title": "C++",
-      "details": "On Codecademy",
-      "complete": false,
+      "title": "React",
+      "details": "LHL",
+      "complete": true,
       "id": 3
     }
   ]
