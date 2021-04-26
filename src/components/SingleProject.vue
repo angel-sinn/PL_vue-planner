@@ -4,7 +4,7 @@
       <h3 @click="toggleDetails">{{project.title}}</h3>
       <div class="icons">
         <span class="material-icons">edit</span>
-        <span class="material-icons">delete</span>
+        <span @click="deleteProject" class="material-icons">delete</span>
         <span class="material-icons">done</span>
       </div>
     </div>
@@ -20,11 +20,18 @@ export default {
   data() {
     return {
       showDetails: false,
+      uri: 'http://localhost:3000/projects/' + this.project.id
     }
   },
   methods: {
     toggleDetails() {
       this.showDetails = !this.showDetails
+    },
+    deleteProject() {
+      fetch(this.uri, {method: 'DELETE'})
+      // emit delete and attach project id
+        .then(() => this.$emit('delete', this.project.id))
+        .catch(err => console.log(err.message))
     }
   }
 }
@@ -46,5 +53,14 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .material-icons {
+    font-size: 24px;
+    margin-left: 10px;
+    color: #bbb;
+    cursor: pointer;
+  }
+  .material-icons:hover {
+    color: #777;
   }
 </style>
